@@ -23,7 +23,7 @@ server.use(passport.initialize());
 // confugure passport to use pasport-jwt
 initPassportStrategy(passport);
 
-const dbString = "mongodb+srv://admin:sak43usd@cluster0.qks5s.mongodb.net/tequest?retryWrites=true&w=majority";
+const dbString = "mongodb+srv://admin:<password>@cluster0.qks5s.mongodb.net/<foldername>?retryWrites=true&w=majority";
 
 mongoose
     .connect(dbString, { useNewUrlParser: true, useUnifiedTopology: true })
