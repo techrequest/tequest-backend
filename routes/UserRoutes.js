@@ -212,7 +212,7 @@ router.post(
             }
         }
 
-        TechrequestModel
+        UserModel
          .updateOne( filter, updateDoc, options)
          .then(
              (document) =>{
